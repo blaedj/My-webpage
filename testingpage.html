@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<title>THis is the page for links to test pages</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="box">
+<?php
+
+	// Start up your PHP Session 
+	session_start();
+
+	// If the user is not logged in send him/her to the login form
+	if ($_SESSION["Login"] == "YES") {
+	  header("Location: login.html");
+	}
+
+	?>
+<h1><a href="homepage.html">HOME</a></h1>
+
+<a href="form.html">Form</a>
+<a href="textFileReading.php">text file i/o, reading and writing</a>
+<a href="table.php">Create the Table</a>
+<h2><a href="display.php">Display people table</a></h2>
+<h3><a href="dataform.html">Data Form</a></h3>
+<br />
+<p><a href="generalform.html">General query form</a></p>
+
+<p><a href="jstestpage.html">js testing page</a></p>
+
+<a href="logout.php?id=899576q3e"><small>Logout</small></a>
+</div>
+</body>
+
+
+
+</html>

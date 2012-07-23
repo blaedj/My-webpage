@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<title>Form</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<div class="box">
+<p>Please Enter your name</p>
+
+<form method="post" action="handler.php">
+
+<input type="text" name="username">
+
+
+<p>Which color do you prefer?</p>
+
+<input type="radio" name="favcolor" value="r"/>Red
+<input type="radio" name="favcolor" value="g"/>Green
+<input type="radio" name="favcolor" value="b"/>Blue
+
+<input type="submit" value="Submit">
+
+</form>
+
+<form action="myfile.php" method="post">
+	<textarea name="textblock"></textarea>
+	<input type='submit' value='Add text'>
+	</form>
+</div>
+
+</body>
+</html>
